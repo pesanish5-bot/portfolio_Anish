@@ -3,103 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Anish Pesan | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AP</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I'm a passionate developer creating amazing web experiences.</p>
-        <a href="#contact">Hire Me</a>
-    </header>
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+        <!-- HERO SECTION -->
+        <header id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="hero-greeting">Hi there, I'm</span>
+                <h1 class="hero-title">Anish Pesan</h1>
+                <p class="hero-subtitle">I'm a passionate developer creating amazing, high-performance web experiences.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </header>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Anish, a software developer passionate about crafting clean, efficient, and user-centric web applications. I enjoy solving complex problems and turning ideas into responsive and beautiful interactive digital experiences.</p>
-        <p>With expertise in front-end and back-end technologies, I strive to write maintainable code and build scalable software solutions that deliver high performance and exceptional user interfaces.</p>
-        <img src="profile.webp" alt="Profile picture of Anish">
-    </section>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hello! I'm Anish, a software developer passionate about crafting clean, efficient, and user-centric web applications. I enjoy solving complex problems and turning ideas into responsive and beautiful interactive digital experiences.</p>
+                    <p>With expertise in front-end and back-end technologies, I strive to write maintainable code and build scalable software solutions that deliver high performance and exceptional user interfaces.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="profile.webp" alt="Profile picture of Anish">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3 / Sass</li>
-            <li>JavaScript (ES6+)</li>
-            
-        </ul>
-    </section>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3 / Sass</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Git / GitHub</li>
+            </ul>
+        </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        
-        <div class="project">
-            <h3>E-Commerce Platform</h3>
-            <p>A full-stack online storefront featuring responsive design, secure payment gateway integration, and real-time inventory management.</p>
-            <p><strong>Tech Stack:</strong> React, Node.js, MongoDB</p>
-        </div>
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">A full-stack online storefront featuring responsive design, secure payment gateway integration, and real-time inventory management.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-desc">A modern analytics dashboard with custom visualization widgets, dark mode support, and interactive user engagement reports.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Chart.js</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">AI-Powered Task Manager</h3>
+                        <p class="project-desc">A smart productivity application with natural language processing to schedule tasks, integrate calendars, and analyze workflow efficiency.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Distributed Cloud Analytics</h3>
+                        <p class="project-desc">A real-time data streaming dashboard utilizing WebSockets and high-performance charting to visualize cloud infrastructure metrics.</p>
+                        <div class="project-tags">
+                            <span>Go</span>
+                            <span>WebSockets</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more">
+                <a href="https://github.com/anish-pesan" target="_blank" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3>Social Media Dashboard</h3>
-            <p>A modern analytics dashboard with custom visualization widgets, dark mode support, and interactive user engagement reports.</p>
-            <p><strong>Tech Stack:</strong> Vue.js, Chart.js, Firebase</p>
-        </div>
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-subtitle">Get in touch! Feel free to reach out for collaborations, job opportunities, or just to say hello.</p>
+            <div class="contact-grid">
+                <a href="mailto:pesanish5@gmail.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">pesanish5@gmail.com</span>
+                    </div>
+                </a>
+                <a href="tel:8910791164" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">8910791164</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/anish-pesan-5b0b1a1b2/" target="_blank" class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <div class="contact-info">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/anish-pesan</span>
+                    </div>
+                </a>
+                <a href="https://github.com/anish-pesan" target="_blank" class="contact-card">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/anish-pesan</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
-        <div class="project">
-            <h3>AI-Powered Task Manager</h3>
-            <p>A smart productivity application with natural language processing to schedule tasks, integrate calendars, and analyze workflow efficiency.</p>
-            <p><strong>Tech Stack:</strong> Python, Flask, OpenAI API</p>
-        </div>
-
-        <div class="project">
-            <h3>Distributed Cloud Analytics</h3>
-            <p>A real-time data streaming dashboard utilizing WebSockets and high-performance charting to visualize cloud infrastructure metrics.</p>
-            <p><strong>Tech Stack:</strong> Go, WebSockets, Docker</p>
-        </div>
-
-        <a href="https://github.com/anish-pesan" target="_blank">View All Projects</a>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            <strong>Email:</strong> 
-            <a href="mailto:pesanish5@gmail.com">pesanish5@gmail.com</a>
-        </p>
-        <p>
-            <strong>Phone:</strong> 
-            <a href="tel:8910791164">8910791164</a>
-        </p>
-        <p>
-            <strong>LinkedIn:</strong> 
-            <a href="https://www.linkedin.com/in/anish-pesan-5b0b1a1b2/" target="_blank">linkedin.com/in/anish-pesan</a>
-        </p>
-        <p>
-            <strong>GitHub:</strong> 
-            <a href="https://github.com/anish-pesan" target="_blank">github.com/anish-pesan</a>
-        </p>
-        <p>
-            <strong>Message Form:</strong> 
-            <a href=".vscode/2form.html">Open Contact Form</a>
-        </p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Anish Pesan. All rights reserved.</p>
     </footer>
 </body>
 </html>
